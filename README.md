@@ -9,6 +9,7 @@ To run code, just type:
 ```bash
 docker-compose -f docker-compose.dev.yml up
 ```
+and then go to http://api.localhost .
 
 The uvicorn will automatically update and restart after changes in files.
 
