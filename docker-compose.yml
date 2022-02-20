@@ -19,9 +19,9 @@ services:
       - --entrypoints.web.http.redirections.entryPoint.to=websecure
       - --entrypoints.web.http.redirections.entryPoint.scheme=https
       - --entrypoints.web.http.redirections.entrypoint.permanent=true
-      - --certificatesresolvers.analytics-resolver.acme.tlschallenge=true
-      - --certificatesresolvers.analytics-resolver.acme.email=example@example.com
-      - --certificatesresolvers.analytics-resolver.acme.storage=/letsencrypt/acme.json
+      - --certificatesresolvers.traefik-resolver.acme.tlschallenge=true
+      - --certificatesresolvers.traefik-resolver.acme.email=example@example.com
+      - --certificatesresolvers.traefik-resolver.acme.storage=/letsencrypt/acme.json
     ports:
       - "80:80"
       - "443:443"
