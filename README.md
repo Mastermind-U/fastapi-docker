@@ -37,6 +37,6 @@ You can export requirements manually, using
 poetry export -f requirements.txt --output requirements.txt
 ```
 
-For adding enviroment variables, edit `.env` file. It's recommended to add this file to `.gitignore` to prevent leak of secret variables into repository. For big projects, use [vault](https://www.vaultproject.io/) .
+For adding enviroment variables, edit `.env` file. It's recommended to add this file to `.gitignore` to prevent leak of secret variables into repository. For big projects, use [vault](https://www.vaultproject.io/) and hvac library.
 
 For VSCode users, select virtual enviroment created by poetry. Mypy and flake8 will be there.
